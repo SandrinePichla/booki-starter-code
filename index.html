@@ -15,9 +15,9 @@
 </head>
 
 <body>
-    <div class="main-container">
+    <div class="main-container">  <!-- Tout le body -->
 
-        <header class="header-content">        
+        <header class="header-content">     <!-- l'en-tête -->    
 
             <img class="logo-booki" src="images/logo/Booki@3x.png" alt="logo de booki">
                
@@ -31,17 +31,89 @@
             
         </header>
         
-        
-        <main>
-            <div class="hebergements-and-populaires">
-                <section class="hebergements">
+       
+        <main class="main">   <!-- le corps -->
+            
+            <section class="recherche">   <!-- SECTION RECHERCHE -->
+                
+                <div class="recherche-title">
+                    <h1 class="section-title">Trouvez votre hébergement pour des vacances de rêve</h1> 
+                    
+                    <p>En plein centre-ville ou en pleine nature</p>                
+                        
+                </div>           
+                        
+                <div class="search-bar">                    
+
+                    <button class="btn-loc"><svg width="14" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg></button>  
+                    
+                    <input class="btn-ville" type="text" name="ville" placeholder="Marseille, France"  required class="search-input">
+                    
+                    <button class="btn-recherche" type="submit">Rechercher</button>
+                    
+                    <button class="btn-loupe"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+                </div>                                
+                        
+                
+                <div class="filter-bar" >
+
+                        <h2>Filtres</h2>
+
+                        <div class="filtres">                            
+                        
+                            <div class="sous-filtres">
+                                <button class="btn-filtre"><i class="fa-solid fa-money-bill-wave"></i>Économique</button>
+                                                    
+                                <button class="btn-filtre"><i class="fa-solid fa-person" style="font-size: 22px;"></i>Familial</button>
+                            
+                            </div>
+
+                            <div class="sous-filtres">                       
+                                <button class="btn-filtre"><i class="fa-solid fa-heart"></i>Romantique</button>
+                                                    
+                                <button class="btn-filtre"><i class="fa-solid fa-fire"></i>Nos pépites</button>
+                            </div>
+                                                    
+                        </div>    
+                                        
+                </div>
+
+                <div class="info-groupe">
+                    <div>
+                        
+                        <i class="fa-solid fa-circle-info"></i>
+                       
+                    </div>
+                    
+                    
+                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                </div>              
+
+            </section>       
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="hebergements-and-populaires">    <!-- SECTION hebergements-and-populaires -->
+
+                <section class="hebergements">    <!-- SECTION hebergements -->
 
                 </section>
-                <section class="populaires">
+
+
+                <section class="populaires">    <!-- SECTION populaires -->
+                    
                     <div class="populaires-title">
                         <h2 class="section-title">Les plus populaires</h2>
                         <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
                     </div>
+                    
                     <div class="populaires-cards">
                         <a href="#">
                             <article class="card">
@@ -104,9 +176,10 @@
                 </section>
             </div>
         </main>
-        <footer class="footer">
-                    <!-- je le referai plus tard -->
-                     <!--  
+
+
+        <footer class="footer">   <!-- SECTION FOOTER -->
+                  
             <div class="footer-item">
                 <h3>À propos</h3>
                 
@@ -132,7 +205,6 @@
                 
             </div> 
 
-        -->
         </footer>
     </div>
 </body>
