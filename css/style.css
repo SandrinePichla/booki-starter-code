@@ -1,3 +1,4 @@
+/****** General FONT ***********/
 * {
     font-family: 'Raleway', sans-serif;
 }
@@ -352,6 +353,7 @@ nav {
 
 .row-card a {
     width: 100%;
+    height: 100%;
 }
 
 .hebergements-cards img {
@@ -434,8 +436,65 @@ nav {
 }
 
 
+/***** ACTIVITES *****/
+.activites {
+    padding: 30px 30px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;  
+}
 
-/***** ACTIVITES A VENIR  *****/
+.activites-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:0;
+}
+
+
+.activites-cards {
+    display: flex;  
+    justify-content:center;
+    gap: 30px;   
+}
+
+.activites-cards .card{
+  border-radius: 20px;
+  padding: 0;  
+  height: 100%;
+}
+
+.activites-cards a {
+    width: 100%;
+}
+
+
+.activites-cards img {
+    width: 100%;
+    height: 380px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.activites-cards .card-content {
+    width: 100%;    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;    
+}
+
+.activites .card-title {    
+    padding: 20px 19px 20px 19px;    
+}
+
+.activites-cards .card-subtitle {
+    margin: 0;
+}
+
+.activites-cards .card-rating {
+    margin-bottom: 5px;
+}
 
 
 /***** FOOTER *****/
@@ -456,8 +515,6 @@ nav {
 .footer p {    
     margin: 0; 
 }
-
-
 
 
 /************************************************** Le code ci-dessous correspond à la version responsive uniquement **************************/
@@ -520,9 +577,41 @@ nav {
     .populaires-cards .card-txt {
         gap: 8px;
     }
+   
 
-    /****** ACTIVITES A VENIR **/
+/****** ACTIVITES ******/
+    .activites {
+    max-width: 820px;
+    padding: 30px;    
+    }
 
+    .activites-cards {   
+    display: flex;    
+    gap: 30px;
+    }
+
+    .activites-cards .card {
+    max-width: 180px;
+    max-height: 310px;
+    }
+
+    .activites-cards img {
+    width: 100%;
+    height: 200px;
+    }
+
+    .activites-cards .card-content {
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 0px;
+    }
+
+    .card-title {
+    margin: 0px;
+    padding:0px;
+    gap: 0px;
+    }  
+    
     /** FOOTER**/
     .footer {
         margin-bottom: 0;
@@ -532,14 +621,14 @@ nav {
 
 /* Small devices (phones, less than 768px)   ********       <768        ****************       <768            *******/ 
 @media (max-width: 767.98px) {
-
+    
     /**** BODY *****/
     .main-container {  
         box-sizing: border-box;
         display: flex;
         flex-direction: column; /* Place les éléments en colonne */
         gap: 0;  
-        max-width: 100%;
+        width: 100%;
         padding: 0;
         margin:auto;
     }
@@ -715,8 +804,21 @@ nav {
         width: 100%;
     }     
     
+    /****** SECTION ACTIVITES *******/    
+    .activites-title {
+        padding-left: 10px;
+    }
     
-    /****** SECTION ACTIVITES A VENIR  *******/
+    .activites-cards {
+        display: flex;
+        gap: 15px;
+        flex-direction: column;
+    }
+
+    .activites-cards .card {
+        max-width: 100%;
+        max-height: 310px;
+    }
 
     /***** SECTION FOOTER**** */
     .footer {    
@@ -728,8 +830,9 @@ nav {
     .footer-item {
         padding: 30px;
     }
-    
+   
 }
+
 
 
 /* Small devices ( less than 480px)      <480           ********         <480      ********         <480           ********/
@@ -743,6 +846,8 @@ nav {
         margin: 0%;
     }
 
+    
+
     .recherche {
         margin-left: 20px;
         margin-right: 20px;
@@ -753,3 +858,19 @@ nav {
         max-width: 100%;
     }    
 }
+
+/* Small devices ( less than 480px)      <360           ********         <360      ********         <360          ********/
+@media (max-width: 360px) {
+    .recherche {
+        height: 440px;
+    }
+    
+    .filtres {
+        height: 25px;
+        
+    }
+
+}
+
+
+ 
