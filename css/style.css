@@ -474,6 +474,7 @@ nav {
 
 .activites-cards a {
     width: 100%;
+    max-height: 100%;
 }
 
 
