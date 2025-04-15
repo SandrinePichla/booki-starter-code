@@ -528,7 +528,7 @@ nav {
 /************************************************** Le code ci-dessous correspond à la version responsive uniquement **************************/
 
 /****** Media queries *********** /
-/* Large devices (more than 1024px)    >1265           ********         >1265            *******/
+/* Large devices (more than 1024px)    >1265           ********         >1265            *********/
 @media (min-width: 1265px) {
     .row-card article.card {
         height: 100%;        
